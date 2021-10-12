@@ -1,0 +1,1 @@
+docker build --rm -t ghcr.io/krsuhjunho/almalinux8-systemd .;docker push ghcr.io/krsuhjunho/almalinux8-systemd
