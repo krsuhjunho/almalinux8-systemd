@@ -32,6 +32,13 @@ jobs:
       - name: docker build
         run: docker build --rm -t ghcr.io/krsuhjunho/almalinux8-systemd .
         
+
+        
+  push:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      # The type of runner that the job will run on     
       - name: Login to GitHub Container Registry
         uses: docker/login-action@v1
         with:
